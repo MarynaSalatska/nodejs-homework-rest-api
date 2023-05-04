@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 // const NODE_VERSION = "16.14.2";
 const app = require("./app");
-const {DB_HOST} =require('./config')
+const { DB_HOST } = process.env;
 
 mongoose.set("strictQuery", true);
 
